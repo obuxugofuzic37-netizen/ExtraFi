@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <meta http-equiv="refresh" content="0; url=https://extrafi.net">
+  <link rel="canonical" href="https://extrafi.net">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      var dest = "https://extrafi.net".replace(/\/$/, ""); // remove trailing slash
+      // For GitHub Project Pages, strip the first path segment (the repo name)
+      var path = (window.location.pathname || "").replace(/^\/[^/]+/, "");
+      var full = dest + (path || "/") + window.location.search + window.location.hash;
+      window.location.replace(full);
+    })();
+  </script>
+  <style>
+    html,body {height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif}
+    .wrap {display:flex;align-items:center;justify-content:center;height:100%;text-align:center;padding:2rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p>Redirecting to <a href="https://extrafi.net">https://extrafi.net</a>…</p>
+  </div>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://extrafi.net">
+  </noscript>
+</body>
+</html>
